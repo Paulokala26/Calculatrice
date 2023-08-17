@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main()
+{
+	long a=0, b=0, multiplication, division, addition, soustraction, racine_carree, operation;
+		printf("entrer d'abord les valeurs de a et b\n");
+	scanf("%ld%ld", &a, &b);
+	printf("\n\n");
+	printf("****menu des operation***\n\n");
+	printf("1. multiplication\n");
+	printf("2. la division\n");
+	printf("3. la soustraction\n");
+	printf("4. l'addition\n");
+	printf("5. la racine carree\n\n");
+	printf("faites votre choix d'operation\n");
+	scanf("%ld",&operation);
+	if(operation==1){
+		multiplication=a*b;
+	printf("le produit de a et b est\t%ld\n",multiplication);
+		}
+		else if(operation==2){
+		division=a/b;
+		printf("le quotient de a et b est %ld\n",division);
+			}
+		else if(operation==3){
+		soustraction=a-b;
+		printf("la soustractionde de a et b est %ld\n",soustraction);
+			}
+			else if(operation==4){
+				addition=a+b;
+				printf("la somme de a et b est %ld\n",addition);
+				}
+				else if(operation==5){
+					racine_carree=sqrt(a);
+					printf("la racine carre de a est %ld\n",racine_carree);
+					}
+					else{
+						printf("nous ne pouvons pas vous aider\n");
+						}
+						system("pause");
+	}
